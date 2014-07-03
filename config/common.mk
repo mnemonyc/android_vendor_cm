@@ -220,9 +220,9 @@ PRODUCT_PACKAGES += \
     procrank
 
 # Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+#    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 endif
 
