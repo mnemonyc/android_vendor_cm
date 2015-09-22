@@ -212,6 +212,7 @@ PRODUCT_COPY_FILES += \
     vendor/hazy/proprietary/system/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
     vendor/hazy/proprietary/system/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
     vendor/hazy/proprietary/system/app/HManager.apk:system/app/HManager/HManager.apk \
+    vendor/hazy/proprietary/system/app/Superuser.apk:system/app/Superuser/Superuser.apk \
     vendor/hazy/proprietary/system/media:system/media
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
