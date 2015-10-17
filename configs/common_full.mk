@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     NoiseField \
     PhaseBeam \
-    VisualizationWallpapers \
     PhotoTable \
     SoundRecorder \
     SoundRecorder \
@@ -24,7 +23,7 @@ PRODUCT_PACKAGES += \
     libvideoeditor_videofilters \
     libvideoeditorplayer
 
-# Extra tools in CM
+# Extra tools in Hazy
 PRODUCT_PACKAGES += \
     vim \
     zip \

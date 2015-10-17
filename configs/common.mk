@@ -53,7 +53,6 @@ ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/hazy/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/hazy/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
@@ -89,40 +88,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is CM!
-PRODUCT_COPY_FILES += \
-    vendor/hazy/configs/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
-
-# Required CM packages
+# Required packages
 PRODUCT_PACKAGES += \
-    Development \
-    BluetoothExt
+    Development
 
-# Optional CM packages
+# Optional packages
 PRODUCT_PACKAGES += \
     VoicePlus \
     Basic \
     libemoji \
     Terminal
 
-# Custom CM packages
+# Custom packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    AudioFX \
+    MusicFX \
     LockClock \
 
-# CM Platform Library
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.platform-res \
-    org.cyanogenmod.platform \
-    org.cyanogenmod.platform.xml
-
-# CM Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
-
-# Extra tools in CM
+# Extra tools in Hazy
 PRODUCT_PACKAGES += \
     libsepol \
     e2fsck \
@@ -186,10 +169,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
-# This device supports CM enhanced NFC
-PRODUCT_COPY_FILES += \
-    vendor/hazy/configs/permissions/com.cyanogenmod.nfc.enhanced.xml:system/etc/permissions/com.cyanogenmod.nfc.enhanced.xml
-
 # Versioning
 -include vendor/hazy/configs/version.mk
 
@@ -209,10 +188,10 @@ ro.config.notification_sound=Salacia.ogg
 
 # Add Hazy packages
 PRODUCT_COPY_FILES += \
-    vendor/hazy/proprietary/system/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
-    vendor/hazy/proprietary/system/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
+    #vendor/hazy/proprietary/system/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
+    #vendor/hazy/proprietary/system/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
     vendor/hazy/proprietary/system/app/HManager.apk:system/app/HManager/HManager.apk \
-    vendor/hazy/proprietary/system/app/Superuser.apk:system/app/SuperSU/SuperSU.apk \
+    #vendor/hazy/proprietary/system/app/Superuser.apk:system/app/SuperSU/SuperSU.apk \
     vendor/hazy/proprietary/system/media:system/media
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
