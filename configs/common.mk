@@ -36,7 +36,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    net.tethering.noprovisioning=true \
+    ro.build.selinux=1 \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    drm.service.enabled=true \
+    ro.layers.noIcon=noIcon
+
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
@@ -51,9 +56,10 @@ endif
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
+    vendor/hazy/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/hazy/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 endif
 
 # Signature compatibility validation
