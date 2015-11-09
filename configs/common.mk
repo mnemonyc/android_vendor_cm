@@ -59,7 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf \
+    vendor/hazy/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
 endif
 
 # Signature compatibility validation
@@ -194,10 +195,10 @@ ro.config.notification_sound=Salacia.ogg
 
 # Add Hazy packages
 PRODUCT_COPY_FILES += \
-    #vendor/hazy/proprietary/system/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
-    #vendor/hazy/proprietary/system/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
-    vendor/hazy/proprietary/system/app/HManager.apk:system/app/HManager/HManager.apk \
-    #vendor/hazy/proprietary/system/app/Superuser.apk:system/app/SuperSU/SuperSU.apk \
-    vendor/hazy/proprietary/system/media:system/media
+    #vendor/hazy/prebuilt/common/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
+    #vendor/hazy/prebuilt/common/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
+    vendor/hazy/prebuilt/common/app/HManager.apk:system/app/HManager/HManager.apk \
+    #vendor/hazy/prebuilt/common/app/Superuser.apk:system/app/SuperSU/SuperSU.apk \
+    vendor/hazy/prebuilt/common/system/media:system/media
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
