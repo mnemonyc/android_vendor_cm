@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf \
-    vendor/hazy/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
+    vendor/hazy/prebuilt/common/bin/install-recovery.sh:system/bin/install-recovery.sh
 endif
 
 # Signature compatibility validation
