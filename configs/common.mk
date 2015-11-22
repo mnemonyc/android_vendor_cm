@@ -196,13 +196,7 @@ ro.config.notification_sound=Salacia.ogg
 
 # Add Hazy packages
 PRODUCT_COPY_FILES += \
+    vendor/hazy/prebuilt/common/app/HManager.apk:system/app/HManager/HManager.apk \
     vendor/hazy/prebuilt/common/system/media:system/media
-
-BUILD_PREBUILT += \
-    vendor/hazy/prebuilt/common/app/HManager/Android.mk
-
-# apns-conf.xml
-PRODUCT_COPY_FILES += \
-    vendor/hazy/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
