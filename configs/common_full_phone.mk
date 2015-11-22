@@ -1,4 +1,4 @@
-# Inherit common CM stuff
+# Inherit common Hazy stuff
 $(call inherit-product, vendor/hazy/configs/common_full.mk)
 
 # Required Hazy packages

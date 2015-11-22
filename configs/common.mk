@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
+    vendor/hazy/prebuilt/common/media/audio:system/media/audio \
     vendor/hazy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/hazy/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
@@ -195,10 +196,7 @@ ro.config.notification_sound=Salacia.ogg
 
 # Add Hazy packages
 PRODUCT_COPY_FILES += \
-    #vendor/hazy/prebuilt/common/app/HazyCenter.apk:system/app/HazyCenter/HazyCenter.apk \
-    #vendor/hazy/prebuilt/common/app/HazyWalls.apk:system/app/HazyWalls/HazyWalls.apk \
     vendor/hazy/prebuilt/common/app/HManager.apk:system/app/HManager/HManager.apk \
-    #vendor/hazy/prebuilt/common/app/Superuser.apk:system/app/SuperSU/SuperSU.apk \
     vendor/hazy/prebuilt/common/system/media:system/media
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
