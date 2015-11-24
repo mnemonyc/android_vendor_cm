@@ -19,4 +19,7 @@ ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
         vendor/hazy/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
 
+PRODUCT_COPY_FILES += \
+        vendor/hazy/prebuilt/common/media:system/media
+
 $(call inherit-product, vendor/hazy/configs/telephony.mk)
