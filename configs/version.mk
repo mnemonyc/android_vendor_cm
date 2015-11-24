@@ -14,7 +14,7 @@ ifdef BUILDTYPE_RELEASE
 endif
 
 ifndef ROM_BUILDTYPE
-    ROM_BUILDTYPE := AlphaTest
+    ROM_BUILDTYPE := Alpha1
 endif
 
 TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)

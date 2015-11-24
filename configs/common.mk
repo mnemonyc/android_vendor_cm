@@ -9,14 +9,6 @@ ifneq ($(filter hazy_find7 hazy_thea hazy_tomato hazy_n7100 hazy_armani hazy_sha
     PRODUCT_COPY_FILES += \
         vendor/hazy/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
- ifneq ($(filter hazy_deb hazy_flo,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/hazy/prebuilt/bootanimation/1920x1200.zip:system/media/bootanimation.zip
- endif
-# ifeq (hazy_manta,$(TARGET_PRODUCT))
-#    PRODUCT_COPY_FILES += \
-#        vendor/hazy/prebuilt/bootanimation/2560x1600.zip:system/media/bootanimation.zip
-# endif
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -84,7 +76,7 @@ PRODUCT_COPY_FILES += \
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/hazy/prebuilt/common/media/audio:system/media/audio \
+    vendor/hazy/prebuilt/common/media/audio/:system/media/audio/ \
     vendor/hazy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/hazy/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
@@ -109,6 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Custom packages
 PRODUCT_PACKAGES += \
+    HManager \
     Launcher3 \
     MusicFX \
     LockClock \
