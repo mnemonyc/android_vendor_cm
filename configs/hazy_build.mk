@@ -45,8 +45,7 @@ PRODUCT_PACKAGES += \
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/hazy/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/hazy/prebuilt/common/app/SuperSU.apk:system/app/SuperSU/SuperSU.apk
+    vendor/hazy/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 	
 #Hazy File Manager
 PRODUCT_COPY_FILES +=  \
