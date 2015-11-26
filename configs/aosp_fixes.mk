@@ -24,12 +24,12 @@ PRODUCT_COPY_FILES += \
 #TARGET_USES_BLOCK_BASED_OTA := false
 
 # Latin IME lib - gesture typing
-ifneq ($(filter hazy_bullhead hazy_angler,$(TARGET_PRODUCT)),)
+ifneq ($(filter hazy_hammerhead hazy_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/hazy/prebuilt/common/lib64/libjni_latinime.so:system/lib/libjni_latinime.so
+    #vendor/hazy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
 PRODUCT_COPY_FILES += \
-    vendor/hazy/prebuilt/common/lib/libjni_latinime.so:system/lib64/libjni_latinime.so
+    vendor/hazy/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
 # APN list
