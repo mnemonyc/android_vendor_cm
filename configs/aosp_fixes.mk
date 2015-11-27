@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
 #TARGET_USES_BLOCK_BASED_OTA := true
 
 # Latin IME lib - gesture typing
-ifneq ($(filter hazy_hammerhead hazy_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter hazy_hammerhead hazy_shamu hazy_i9300,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
