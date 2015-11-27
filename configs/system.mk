@@ -16,8 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/hazy/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf \
-    vendor/hazy/prebuilt/common/bin/install-recovery.sh:system/bin/install-recovery.sh
+    vendor/hazy/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
