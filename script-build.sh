@@ -9,4 +9,8 @@ source build/envsetup.sh
 
 croot
 
+chmod -R 0777 vendor
+
 brunch angler
+
+chmod -R 0777 out
