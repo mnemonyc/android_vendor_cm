@@ -21,12 +21,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 #Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
-#TARGET_USES_BLOCK_BASED_OTA := true
+#TARGET_USES_BLOCK_BASED_OTA := false
 
 # Latin IME lib - gesture typing
 ifneq ($(filter hazy_hammerhead hazy_shamu hazy_i9300,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/hazy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    #vendor/hazy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
 PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
