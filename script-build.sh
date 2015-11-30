@@ -11,6 +11,6 @@ croot
 
 chmod -R 0777 vendor
 
-brunch angler
+brunch shamu
 
 chmod -R 0777 out
