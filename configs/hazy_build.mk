@@ -48,6 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/hazy/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 	
 #Hazy File Manager
-PRODUCT_COPY_FILES +=  \
-    vendor/hazy/prebuilt/common/app/HManager.apk:system/app/HManager/HManager.apk
+#PRODUCT_COPY_FILES +=  \
+#    vendor/hazy/prebuilt/common/app/HManager.apk:system/app/HManager/HManager.apk
    
